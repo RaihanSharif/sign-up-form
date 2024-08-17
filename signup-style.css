@@ -131,3 +131,8 @@ footer {
 footer a {
     color: white;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+}
