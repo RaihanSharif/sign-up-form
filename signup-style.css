@@ -1,10 +1,10 @@
  /* 
- use variables to set theme 
- log in link and createa ccount button have the same color
-
- set some default styles
-
- make a dark theme?
+-- Use variables somehow
+-- use custom font  DONE
+-- background image DONE
+-- odin logo on sidebar DONE
+-- layout the two sides  DONE
+-- Sidebar font  DONE
 
 
 
@@ -12,13 +12,118 @@
 
 :root {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: black;
+    font-size: 16px;
+}
+
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+
+body {
+    display: flex;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    height: 100vh;
+    
 }
 
 @font-face {
     font-family: Norse-Bold;
-    src: url(/assets/Norse-Bold.otf);
+    src: url(/assets/Norse-Bold2.woff);
 }
 
 .left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: no-repeat center url("./assets/leaf-bg.avif");
+    width: 40%;
+    color: white;
+    background-size:cover;
+}
+
+.sidebar-main {
+    position: relative;
+    top: 20rem;
+    display: flex;
+    width: 100%;
+    /* TODO: do the height in a better way */
+    /* max-height: 7rem; */
+    background-color: rgba(0, 0, 0, 0.466);
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+
+}
+
+#icon-holder {
+	height: min(150px, 100%);
+    max-height: 150px;
+}
+
+.logo-text {
     font-family: Norse-Bold, sans-serif;
+    font-size: 6rem;
+}
+.right-container {
+    background: white;
+    width: 60%;
+}
+
+
+footer {
+    position: relative;
+    bottom: 1rem;
 }
