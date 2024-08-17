@@ -127,3 +127,7 @@ footer {
     position: relative;
     bottom: 1rem;
 }
+
+footer a {
+    color: white;
+}
