@@ -1,0 +1,24 @@
+ /* 
+ use variables to set theme 
+ log in link and createa ccount button have the same color
+
+ set some default styles
+
+ make a dark theme?
+
+
+
+ */
+
+:root {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(/assets/Norse-Bold.otf);
+}
+
+.left-container {
+    font-family: Norse-Bold, sans-serif;
+}
