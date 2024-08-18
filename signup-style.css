@@ -223,6 +223,25 @@ a {
   color: #596D48;
 }
 
+/* input[type="password"] {
+  border: #E5E7EB 1px solid;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: normal;
+} */
+
 input[type="password"]:invalid {
-  border: red;
+  border: 1px solid red;
 }
+
+input:focus {
+  border: 1px solid rgb(27, 68, 182);
+  -webkit-box-shadow: 3px 2px 9px 0px rgb(166, 166, 168);
+-moz-box-shadow: 3px 2px 9px 0px rgb(175, 176, 179);
+box-shadow: 3px 2px 9px 0px rgb(190, 190, 193);
+}
+
+input[type="password"]:valid {
+  border: 1px solid rgb(29, 179, 57);
+}
+
