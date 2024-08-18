@@ -1,7 +1,7 @@
 
 @font-face {
-  font-family: Norse-Bold;
-  src: url(/assets/Norse-Bold2.woff2);
+  font-family: "Norse Bold";
+  src: url("./assets/Norse-Bold2.woff2");
 }
 
 :root {
@@ -118,7 +118,7 @@ body {
 }  
 
 .logo-text {
-  font-family: Norse-Bold, sans-serif;
+  font-family: "Norse Bold", sans-serif;
   font-size: 6rem;
 }  
 
@@ -202,13 +202,6 @@ button:active {
 a {
   color: #596D48;
 }
-
-/* input[type="password"] {
-  border: #E5E7EB 1px solid;
-  border-radius: 4px;
-  font-size: 1rem;
-  font-weight: normal;
-} */
 
 input[type="password"]:invalid {
   border: 1px solid red;
