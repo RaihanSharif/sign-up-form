@@ -1,2 +1,5 @@
 # sign-up-form
-for odin project
+A sign up form for Odin Project
+
+Has sidebar, form with clientside input validation. No serverside validation
+Not responsive.
