@@ -25,7 +25,9 @@
         </div>
 
         <div class="form-container">
-            <form id="signup-form" action="http://127.0.0.1:5500/signup.html" method="get">
+            <!-- using get to load the same page again, in a proper setup would use
+             method="post" to send form input data to server-->
+            <form id="signup-form" action="/signup.html" method="get">
                 <h1>Let's do this</h1>
                 <fieldset>
                     <label for="fname">FIRST NAME
