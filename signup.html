@@ -25,32 +25,32 @@
         </div>
 
         <div class="form-container">
-            <form action="#" method="post">
+            <form id="signup-form" action="http://127.0.0.1:5500/signup.html" method="get">
                 <h1>Let's do this</h1>
                 <fieldset>
                     <label for="fname">FIRST NAME
-                        <input id="fname" name="fname" type="text">
+                        <input id="fname" name="fname" type="text" required>
                     </label>
                     <label for="lname">LAST NAME
-                        <input id="lname" name="lname" type="text">
+                        <input id="lname" name="lname" type="text" required>
                     </label>
                     <label for="email">EMAIL
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" erquired>
                     </label>
                     <label for="tel">PHONE NUMBER
                         <input type="tel" name="tel" id="tel">
                     </label>
                     <label for="pword">PASSWORD
-                        <input type="password" name="pword" id="pword">
+                        <input type="password" name="pword" id="pword" required>
                     </label>
                     <label for="confirm-pword">CONFIRM PASSWORD
-                        <input type="password" name="confirm-pword" id="confirm-pword">
+                        <input type="password" name="confirm-pword" id="confirm-pword" required>
                     </label>
                 </fieldset>
             </form>
         </div>
         <div class="btn-container">
-            <button type="submit">Create Account</button>
+            <button form="signup-form" value="submit" type="submit">Create Account</button>
             <p>Already have an account? <a href="#">Log In</a></p>
         </div>
     </div>
