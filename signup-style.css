@@ -1,20 +1,3 @@
- /* 
--- Use variables somehow
--- use custom font  DONE
--- background image DONE
--- odin logo on sidebar DONE
--- layout the two sides  DONE
--- Sidebar font  DONE
--- right side header
--- form header
--- form input layout
--- form input validation
--- form buttom and log in link
--- from label style
--- form h1 style
--- form button style
-
- */
 
 :root {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -23,6 +6,7 @@
 
 
 /*
+ Taken from Josh Comeau: https://www.joshwcomeau.com/css/custom-css-reset/
   1. Use a more-intuitive box-sizing model.
 */
 *, *::before, *::after {
@@ -114,13 +98,11 @@ body {
   padding: 0 3rem;
 }
 
-.sidebar-main {
+.left-main {
   position: relative;
   top: 20%;
   display: flex;
   width: 100%;
-  /* TODO: do the height in a better way */
-  /* max-height: 7rem; */
   background-color: rgba(0, 0, 0, 0.466);
   justify-content: center;
   align-items: center;
@@ -149,16 +131,12 @@ footer a {
 }
 
 
-input, label {
-  display: block;
-
-}
-
 input {
   border: #E5E7EB 1px solid;
   border-radius: 4px;
   font-size: 1rem;
   font-weight: normal;
+  display: block;
 }
 
 label {
@@ -190,7 +168,7 @@ fieldset input {
   width: 15rem;
 }
 
-h1 {
+.right-container h1 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
