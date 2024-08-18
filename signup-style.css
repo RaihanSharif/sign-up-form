@@ -1,4 +1,9 @@
 
+@font-face {
+  font-family: Norse-Bold;
+  src: url(/assets/Norse-Bold2.woff2);
+}
+
 :root {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background-color: black;
@@ -67,10 +72,7 @@ body {
     
 }
 
-@font-face {
-    font-family: Norse-Bold;
-    src: url(/assets/Norse-Bold2.woff2);
-}
+
 
 .left-container {
     display: flex;
